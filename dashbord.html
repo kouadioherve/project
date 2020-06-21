@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>    
+  #navbar{
+    background-color:#24292E;
+    color: white;
+  }
+      
+    .navbar-nav,
+.navbar-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-nav ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.navbar-nav li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.navbar-nav > li {
+  float: left;
+}
+
+.navbar-nav li:hover > ul,
+.navbar-nav li.sfHover > ul {
+  display: block;
+}
+
+.navbar-nav ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.navbar-nav ul li {
+  min-width: 180px;
+}
+
+
+.navbar-nav a {
+  padding: 22px 15px 18px 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  outline: none;
+}
+
+.navbar-nav a:hover,
+.navbar-nav li:hover > a,
+.navbar-nav .menu-active > a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-nav ul {
+  margin: 4px 0 0 15px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-nav ul li {
+  background: #fff;
+  border-top: 1px solid #f4f4f4;
+}
+
+.navbar-nav ul li:first-child {
+  border-top: 0;
+}
+
+.navbar-nav ul li:hover {
+  background: #24292E;
+  transition: 0.3s;
+}
+
+.navbar-nav ul li a {
+  color: #333;
+  transition: none;
+  padding: 10px 15px;
+}
+
+.navbar-nav ul li a:hover {
+  color: #fff;
+}
+
+.navbar-nav ul ul {
+  margin: 0;
+}
+
+.nav-link{
+  margin-left: 4rem;
+}
+  article{ 
+  margin-left: 300px;
+  padding-right: 280px;
+  margin-top: 20px;
+        
+}
+
+.navigateur{
+  margin-top: -1270px;
+  margin-left: 5px;
+}
+      
+      hr{
+        margin-top: -10px;
+      }
+       .recherche{
+        float: right;
+        margin-top: -396px;
+        margin-right: 5px;
+      }
+
+      .card-header1{
+        background-color: #ffd700;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .card-header2{
+        background-color: #0366D6;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left:8px;
+      }
+      .card-header3{
+        background-color: #00f6e0;
+        text-align:left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left:8px;
+      }
+      .card-header4{
+        background-color: #ffd700;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left:8px;
+      }
+      .card-header5{
+        background-color:#f600f6;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left:8px;
+      } 
+      .card-header6{
+        background-color: #696969;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        padding-left:8px;
+      }
+      .card-header7{
+        background-color: #A9A9A9;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        padding-left:8px;
+      }
+      .btn{
+        background-color: #ff7f00;
+      }
+      footer{
+      background-color:#24292E;
+      height: 50px;
+      color: white;
+      padding-left: 10rem;
+      padding-top: 10px;
+      margin-top: 1010px;
+    
+    }
+    
+     .fas{
+       padding-right: 5px;
+     }
+    .far{
+      float: right;
+      padding-right: 3px;
+      color:#A9A9A9;
+    }
+   
+    .img-circle {
+	    border-radius: 50%
+    }
+    .card-body a {
+      text-decoration: none;
+      color:#24292E;
+    }
+
+    </style>
+</head>
+<body>
+    <i class="fas fa-home fas-5x"></i>
+  <nav class="navbar navbar-expand-lg  navbar-light  " id="navbar">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color: white;"><i class="fas fa-home" style="font-size:20px;"></i></a><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#" style="color: white;">Tableau de Bord</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link"  style="color: white;">Formations</a>
+							<ul>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li> 
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+            <li class="nav-item"><a href="#" class="nav-link"  style="color: white;">Cours</a>
+							<ul>
+								<li><a href="#">programmation web</a></li>
+								<li><a href="#">javascript</a></li>
+								<li><a href="#"></a></li> 
+								<li><a href="#"></a></li>
+							</ul>
+						</li>
+            <div class="headermenu row" style="padding-left:400px;">
+              <div class="dropdown secondone" >
+                  <a class="dropdown-toggle usermendrop" data-toggle="dropdown" style="margin-top:-20px">
+                   
+    <img class="img-circle" src="http://licence3.uvci.edu.ci/theme/image.php/adaptable/core/1584709447/u/f1" alt="Picture of KOUADIO KOMENAN HERVE" title="Picture of " class="userpicture defaultuserpic" width="50" height="50"  />KOUADIO KOMENAN HERVE
+                    
+                  </a>
+            <ul class="dropdown-menu usermen" role="menu">
+            <li><a href="#" >Tableau de bord</a></li>
+              <li><a href="#">Voir le profil</a></li>
+              <li><a href="#">Editer le profile</a></li>
+              <li><a href="">Se déconnecter</a></li>
+            </ul>
+            </div>
+            </div>
+          </ul>
+    </nav>
+    <section>
+      <article>
+          <h2>Cours suivis par semetres </h2 ><hr> 
+        <table class="table table-bordered" style="box-shadow: 6px 6px 6px 3px  gray;">
+          <thead class="thead-dark">
+            <tr>
+              <th class="col-md-2"> Cours</th>
+              <th >Inscription</th>
+              <th >Progression</th>
+              <th >Semestre</th>
+              
+            </tr>
+          </thead>
+              <tbody>
+                <tr>
+                  <td > françaisfonon</td>
+                  <td ></td>
+                  <td>
+                      <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                        </div>
+                  </td>
+                  <td rowspan="12"><h2 style="text-align:center; margin-top:240px;"> Semestre 1</h2></td>
+                </tr>
+                <tr>
+                    <td> français</td>
+                    <td ></td>
+                    <td>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td > français</td>
+                      <td ></td>
+                      <td>
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                           </div>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                        <td > français</td>
+                        <td ></td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                              </div> 
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                           <td > français</td>
+                          <td ></td>
+                          <td > <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td > français</td>
+                            <td ></td>
+                            <td > <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                              </div></td>
+                            
+                          </tr>
+                <tr>
+                  <td > français</td>
+                  <td ></td>
+                  <td > <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div></td>
+                  
+                </tr>
+                <tr>
+                    <tr>
+                        <td > français</td>
+                        <td ></td>
+                        <td > <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                          </div></td>
+                    
+                      </tr>
+                      <tr>
+                          <td > français</td>
+                          <td ></td>
+                          <td > <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></td>
+                          
+                        </tr>
+                    
+                <tr>
+                  <td > français</td>
+                  <td ></td>
+                  <td > <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div></td>
+            
+                </tr>
+                <tr>
+                    <td > français</td>
+                    <td ></td>
+                    <td > <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                      </div></td> 
+            
+                  </tr>
+              </tbody> 
+            </table>
+            <table class="table table-bordered" style="box-shadow: 6px 6px 6px 3px  gray;">
+                <thead class="thead-dark">
+                  <tr>
+                    <th class="col-md-2"> Cours</th>
+                    <th >Inscription</th>
+                    <th >Progression</th>
+                    <th>Semestres</th>
+                  </tr>
+                </thead>
+                    <tbody>
+                      <tr>
+                        <td > français</td>
+                        <td ></td>
+                        <td > <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                          </div></td>
+                        <td rowspan="12"><h2 style="text-align:center; margin-top:240px;">Semestre 2</h2></td>
+                      </tr>
+                      <tr>
+                          <td> français</td>
+                          <td ></td>
+                          <td > <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td > français</td>
+                            <td ></td>
+                            <td > <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                              <td> français</td>
+                              <td ></td>
+                              <td > <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td> français</td>
+                                <td ></td>
+                                <td > <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                  <td> français</td>
+                                  <td ></td>
+                                  <td > <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                    </div></td>
+                                </tr>
+                      <tr>
+                        <td > français</td>
+                        <td ></td>
+                        <td > <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                          </div></td>
+                      </tr>
+                      <tr>
+                          <tr>
+                              <td > français</td>
+                              <td ></td>
+                              <td > <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td> français</td>
+                                <td ></td>
+                                <td > <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                  </div></td>
+                              </tr>
+                          
+                      <tr>
+                        <td > français</td>
+                        <td ></td>
+                        <td > <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                          </div></td>
+                      </tr>
+                      <tr>
+                          <td >français</td>
+                          <td ></td>
+                          <td > <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></td>
+                        </tr>
+                    </tbody> 
+                  </table>
+      </article> 
+      <aside>
+          <div class="navigateur">
+          <div class="card  mb-4" style="max-width: 18rem;">
+              <div class="card-header6 text-white"><i class="fas fa-sitemap" style="padding-right:10px;"></i>NAVIGATION<i class='far fa-caret-square-left'style="padding-right: 12px;"></i><i class="far fa-minus-square"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">Tableau de bord</h5>
+                <div class="card-body ">
+                  <a href="#"><i class='fas fa-caret-right'></i>Accueil</a> <br>
+                  <a href="#"><i class='fas fa-caret-down'></i>Cours actuel</a><br>
+                  <a href="#"><i class='fas fa-caret-right'></i>TD</a> <br>
+                  <a href="#"><i class='fas fa-caret-right'></i>Mes cours</a> 
+                </div>
+              </div>
+            </div>
+            <div class="card   mb-4" style="max-width: 18rem;">
+              <div class="card-header7 text-gray"><i class="fas fa-cogs" style="color:black; padding-right:10px;"></i>ADMINISTRATION <i class='far fa-caret-square-left'style="padding-right: 12px; color: black;"></i><i class="far fa-minus-square" style="color: black;"></i></div>
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            <div>
+          <div class="recherche"> 
+            <div class="card mb-4" style="max-width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title text-"><i class="fas fa-wrench"></i> OUTILS<i class='far fa-caret-square-left'style="padding-right: 12px;"></i><i class="far fa-minus-square"></i><br> DU TABLEAU DE<br> BORD</h5>
+                <p class="card-text"></p>
+                <a class="btn text-white" href="#" >Créer un cours</a> <br> <br> <a class="btn text-white" href="#" >S'inscrire à un cours</a>
+                
+              </div>
+            </div>
+              <div class="card  mb-4" style="max-width: 18rem;">
+              <div class="card-header2 text-white"><i class="fas fa-folder-open"></i> FICHIERS<i class='far fa-caret-square-left'style="padding-right: 12px;"></i><i class="far fa-minus-square" ></i><br>PERSONNELS</div>
+              <div class="card-body">
+                <h5 class="card-title">Aucun fichier disponible</h5>
+                <a href="#">Gérer les fichiers personnels...</a>
+              </div>
+            </div>
+            <div class="card  mb-4" style="max-width: 18rem;">
+                <div class="card-header3 text-white"><i class="far fa-calendar-alt" style="float:left; padding-right: 5px; padding-top: 4px; color: white"></i>  EVENEMENT<i class='far fa-caret-square-left'style="padding-right: 12px;" ></i><i class="far fa-minus-square"></i><br>A VENIR </div>
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+              <div class="card   mb-4" style="max-width: 18rem;">
+                <div class="card-header4 text-white"> <i class="fas fa-envelope"></i> MESSAGES<i class='far fa-caret-square-left'style="padding-right: 12px;"></i>  <i class="far fa-minus-square"></i><br>PERSONNELS</div>
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+              <div class="card   mb-4" style="max-width: 18rem;">
+                  <div class="card-header5 text-white"><i class="fas fa-users"></i>  UTILISATEURS <i class='far fa-caret-square-left'style="padding-right: 12px;"></i><i class="far fa-minus-square"></i> <br> EN LIGNE</div>
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+          </div>
+      </aside>
+</section>
+<footer>Copyright &copy; 2020 -- Fortic groupe sarl tout droit reservés. | groupe 5</footer>
+    <script src="jqurey.js"></script>
+    <script src="bootstrap.js"></script>
+    
+</body>
+</html>
